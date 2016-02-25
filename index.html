@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Application</title>
+
+    <style>
+    </style>
+</head>
+<body>
+
+    <div ng-app="app">
+        <div ng-controller="TotalController as ctrl">
+            The sum is equal to {{ ctrl.sum }}
+        </div>
+    </div>
+
+    <script src="js/angular.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/controllers/TotalController.js"></script>
+    <script src="js/app/services/MathService.js"></script>
+
+</body>
+</html>
