@@ -1,14 +1,11 @@
-// Your code here!
-function MathService(){
-  this.sum = function(arr){
-    var total = 0;
-    arr.forEach(function(number){
-      total += number;
+function MathService() {
+  this.sum = function (arr) {
+    return arr.reduce(function (prev, next) {
+      return prev + next;
     })
-    return total;
-  }
+  };
 }
 
 angular
   .module('app')
-  .service('MathService', MathService)
+  .service('MathService', MathService);
