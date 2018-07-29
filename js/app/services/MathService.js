@@ -1,9 +1,9 @@
 // Your code here!
 function MathService(){
   this.sum = (arr) => {
-    return arr.reduce((a, b) => {
-      return a + b
-    })
+    let result = 0
+    arr.forEach(num => result += num)
+    return result
   }
 }
 
